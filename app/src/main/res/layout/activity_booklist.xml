@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bks2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mood"
+        android:textSize="25dp"
+        android:id="@+id/moodTV"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageButton"
+        android:src="@drawable/logouts"
+        android:onClick="logoutBook"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Logout"
+        android:linksClickable="true"
+        android:id="@+id/logoutTV2"
+        android:onClick="logoutBook"
+        android:textColor="@color/dark_red"
+        android:textColorLink="@color/dark_blue"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bklist"
+        android:layout_below="@+id/moodTV"
+        android:layout_marginTop="60dp"
+        android:background="@color/grey"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignRight="@+id/logoutTV2"
+        android:layout_alignEnd="@+id/logoutTV2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User"
+        android:id="@+id/userTV2"
+        android:textColor="@color/dark_red"
+         />
+</RelativeLayout>
